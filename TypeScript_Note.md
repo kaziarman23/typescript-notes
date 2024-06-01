@@ -59,10 +59,10 @@ TypeScript is a devlopment tool for JavaScript.When we write rew javaScript it h
 
 2. Passing obj in the function peramitar is requred some syntex also:
 
-## Have to read decoment's for this;
 
 
 
+<Have_to_read_decoment_for_this;>
 
 
 
@@ -97,3 +97,23 @@ TypeScript is a devlopment tool for JavaScript.When we write rew javaScript it h
 3. Interfaces: Interfaces in TypeScript are powerful tools for defining the structure of objects. They act like blueprints or contracts that specify the properties and methods that an object must have.
 
 
+## Union:
+## file number 04
+
+1. In TypeScript, union types allow you to specify that a variable or function parameter can hold more than one data type. It's like saying "this value can be either this type or that type."  The pipe symbol | is used to separate the allowed types in a union.
+
+2. TypeScript won't always know the exact type within a union at compile time. You might need to use type guards (like conditional statements) to narrow down the type before using specific methods.
+
+
+## Tuples:
+## file number 05
+
+1. Tuples: Typed Arrays for Structured Data. In TypeScript, tuples provide a way to represent an ordered list of elements with specific types
+
+
+## private & public:
+## file number 06
+
+1. Use public for properties that need to be directly accessed and modified by other parts of your code.
+
+2. Use private for properties that represent internal state or data that should be managed within the class and accessed/modified through public methods.

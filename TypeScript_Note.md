@@ -59,14 +59,7 @@ TypeScript is a devlopment tool for JavaScript.When we write rew javaScript it h
 
 2. Passing obj in the function peramitar is requred some syntex also:
 
-
-
-
-<Have_to_read_decoment_for_this;>
-
-
-
-
+        //have to use Alises to pass the obj in the peramitar
 
 
 ## Type Aliases in functions:
@@ -117,3 +110,89 @@ TypeScript is a devlopment tool for JavaScript.When we write rew javaScript it h
 1. Use public for properties that need to be directly accessed and modified by other parts of your code.
 
 2. Use private for properties that represent internal state or data that should be managed within the class and accessed/modified through public methods.
+
+
+## getters & setters:
+## file number 07
+
+ <Getters>:
+
+1. Defined using the get keyword followed by the property name.
+2. Act as accessor methods, allowing you to retrieve the value of a private property.
+3. Can perform additional logic before returning the value, such as formatting or calculations.
+
+
+<Setters>:
+
+1. Defined using the set keyword followed by the property name and an argument representing the new value.
+2. Act as mutator methods, enabling you to modify the value of a private property.
+3. Can implement validation checks on the new value before assigning it to the property.
+4. Can't directly return a value (unlike regular methods).
+
+
+
+
+
+## Abstract Class:
+## file number 08
+
+learn from Ai
+
+আচ্ছা, চলো আজকে একটা মজার খেলনা তৈরি করা যাক! কিন্তু এটা একটু বিশেষ খেলনা, এটা অন্য খেলনাগুলোর জন্য নির্দেশাবলী দেয়!
+
+খেলনাগুলো সব ভাইবোন। এই বিশেষ খেলনাটা বড় ভাইয়ের মতো, সে ছোট ভাইবোনদেরকে কিভাবে খেলতে হবে সেটা শেখায়। কিন্তু নিজে খেলে না।
+
+এই বিশেষ খেলনাটাকেই আমরা TypeScript-এ বলি abstract class ।
+
+নিজে খেলে না: abstract class থেকে সরাসর কোনো কিছু তৈরি করা যায় না (যেমনটা আমরা গাড়ি বা পুতুল তৈরি করি)।
+
+1. নির্দেশাবলী দেয়: এটা ছোট ভাইবোনদেরকে (অর্থাৎ, subclass বা সাবক্লাস) নির্দেশ দেয় কিভাবে খেলতে হবে। এই নির্দেশাবলী হলো abstract methods যা বড় ভাই তো বলে দেয় কিন্তু নিজে করে না।
+
+2. ছোট ভাইবোনরা শেখে: subclass-গুলো এই abstract methods গুলোকে শেখে নেয় আর নিজের মতো করে খেলে (অর্থাৎ, সেগুলো নিজের কোড লিখে abstract methods গুলোকে বাস্তবায়ন করে)। এর ফলে সব খেলনা (subclass) একই রকমের কিছু জিনিস (shared functionality) করতে পারে কিন্তু নিজের মতো করেও খেলতে পারে (polymorphism)।
+
+3. উদাহরণ:
+
+কল্পনা করো আমাদের একটা গোল (circle) খেলনা আছে এবং একটা বর্গাকার (square) খেলনা আছে।
+কিন্তু আমাদের আছে আরো একটা খেলনা "আকার" (shape) যা নিজে কোনো আকারের না কিন্তু গোল এবং বর্গাকার খেলনা দুটিকে নির্দেশ দেয় যে তাদের একটা क्षेत्रফল (kṣétraphól) নামের কিছু থাকতে হবে।
+
+
+
+
+
+
+## Generics:
+## file number 09
+
+1. Generics are a powerful feature in TypeScript that allow you to write code that can work with different data types without sacrificing type safety.
+
+
+## Narrowing:
+## file number 10
+
+1. Narrowing refers to the process of making the type of a variable more specific during the execution of your code. 
+        
+        // You use statements like if conditionals or type predicates (functions that check types) to refine the type of the variable.
+
+        // These checks help the TypeScript compiler understand the variable's actual type at that specific point in your code.
+
+  # -- Instanceof:
+
+  1. It's allow us to check the type of the class that we want to know. We can say that typeof and instanceof is kind of same. 
+  example it say's that :
+
+                 
+                if(data instanceof boolean){
+                        //rest of the code 
+                }
+
+                // In the condition it say's that the data is a boolean
+
+
+  # -- type predicates:
+
+  1. Predicate is a special kind of function that takes a value and returns a boolean indicating whether that value belongs to a specific type or satisfies certain conditions.
+  2. They are a powerful tool for type narrowing and improving code clarity.
+
+  # -- Exhaustiveness:
+
+  1.  you're writing code that handles different scenarios based on a variable's type. Exhaustiveness checking ensures you've considered all possible types that variable can hold and written logic to address each one. This helps catch potential bugs where you forget to handle a specific case.

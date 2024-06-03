@@ -196,3 +196,16 @@ learn from Ai
   # -- Exhaustiveness:
 
   1.  you're writing code that handles different scenarios based on a variable's type. Exhaustiveness checking ensures you've considered all possible types that variable can hold and written logic to address each one. This helps catch potential bugs where you forget to handle a specific case.
+
+
+## Type Assertions:
+
+1. We use type assertions (shape as Circle and shape as Square) to tell the compiler to trust us that shape is actually of the specified type (Circle or Square) within the case block. This allows us to access radius and side properties without worrying about potential null or undefined values.
+
+        function getArea(shape: Shape) {
+                switch (shape.kind) {
+                        case "circle" :
+                        return Math.PI * (shape as Circle).radius ** 2  // used Type Assertions
+                }
+        }
+
